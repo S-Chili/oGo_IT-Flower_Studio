@@ -1,2 +1,16 @@
-@import './common';
-@import './example';
+@import './base/reset';
+@import './utils/vars';
+@import './utils/placeholders';
+@import './utils/mixins';
+@import './base/common';
+@import './components/button';
+@import './components/section-styles';
+@import './components/textstyle';
+@import './layout/header';
+@import './layout/hero';
+@import './layout/about';
+@import './layout/store';
+@import './layout/delivery';
+@import './layout/blog';
+@import './layout/footer';
+

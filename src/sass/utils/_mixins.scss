@@ -1,0 +1,17 @@
+@mixin btn-size($f-size: 18px, $btn-width: 170px, $line-height: 1.33, $btn-height: 40px) {
+    width: $btn-width;
+    height: $btn-height;
+    font-size: $f-size;
+    line-height: $line-height;
+    background-color: $btn-color;
+    color: $tittle-background-color;
+    border-radius: 38px;
+    padding: 14px 28px;
+}
+
+@mixin secondarytitle($font-weight: 500) {
+    font-weight: $font-weight;
+    font-size: 16px;
+    line-height: 1.25;
+    color: $title-text-color;
+}

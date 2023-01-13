@@ -1,0 +1,14 @@
+.button {
+    @include btn-size;
+  
+    @media screen and (min-width: $tablet) {
+        padding: 16px 32px;
+        width: 280px;
+        height: 64px;
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 0.86;
+    }
+  }
+
+ 
