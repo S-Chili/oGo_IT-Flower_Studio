@@ -1,7 +1,7 @@
 <section class="delivery section">
   <div class="container">
+    <h2 class="delivery__title title">DELIVERY</h2>
     <div class="delivery__deskr">
-      <h2 class="delivery__title title">DELIVERY</h2>
       <ol class="delivery__list">
         <li class="delivery__item texts">
           Choose your bouquet and make an order on website
@@ -24,12 +24,17 @@
     <img
       class="delivery__img"
       srcset="
-        ./images/delivery-mobile.jpg    1x,
-        ./images/delivery-mobile@2x.jpg 2x
+        ./images/delivery-mobile.jpg      320w,
+        ./images/delivery-tablet.jpg      768w,
+        ./images/delivery-desktop.jpg    1280w,
+        ./images/delivery-mobile@2x.jpg   640w,
+        ./images/delivery-tablet@2x.jpg  1536w,
+        ./images/delivery-desktop@2x.jpg 2560w
       "
+      sizes="(min-width: 1200px) 1280px, (min-width: 768px) 768px, (min-width: 480px) 480px, 100vw"
       src="./images/delivery-mobile.webp"
-      alt="верстка сайту на планшеті та комп'ютері"
-      width="320"
+      alt="Кольорові квіти"
+      width="480"
     />
   </div>
 </section>
