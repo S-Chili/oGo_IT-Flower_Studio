@@ -1,0 +1,179 @@
+<section class="section store" id="store">
+  <div class="container">
+    <div class="title__wrapper">
+      <h2 class="title">store</h2>
+      <span class="title__line"></span>
+    </div>
+    <ul class="store__list list">
+      <li class="store__item">
+        <img
+          srcset="
+            ./images/store-3-desktop.jpg      600w,
+            ./images/store-3-desktop.webp     600w,
+            ./images/store-3-desktop@2x.jpg  1200w,
+            ./images/store-3-desktop@2x.webp 1200w,
+            ./images/store-3-tablet.jpg       344w,
+            ./images/store-3-tablet.webp      344w,
+            ./images/store-3-tablet@2x.jpg    688w,
+            ./images/store-3-tablet@2x.webp   688w,
+            ./images/store-3-mobile.jpg       136w,
+            ./images/store-3-mobile.webp      136w,
+            ./images/store-3-mobile@2x.jpg    272w,
+            ./images/store-3-mobile@2x.webp   272w
+          "
+          src="./images/photo-1-desktop.jpg"
+          alt="Compliments"
+          sizes="50vw"
+        />
+        <div class="store__title-wrapper">
+          <h3 class="store__title">compliments</h3>
+          <span class="store__title-line"></span>
+        </div>
+        <p class="store__text">from $15</p>
+      </li>
+      <li class="store__item">
+        <img
+          srcset="
+            ./images/store-1-desktop.jpg      600w,
+            ./images/store-1-desktop.webp     600w,
+            ./images/store-1-desktop@2x.jpg  1200w,
+            ./images/store-1-desktop@2x.webp 1200w,
+            ./images/store-1-tablet.jpg       344w,
+            ./images/store-1-tablet.webp      344w,
+            ./images/store-1-tablet@2x.jpg    688w,
+            ./images/store-1-tablet@2x.webp   688w,
+            ./images/store-1-mobile.jpg       136w,
+            ./images/store-1-mobile.webp      136w,
+            ./images/store-1-mobile@2x.jpg    272w,
+            ./images/store-1-mobile@2x.webp   272w
+          "
+          src="./images/photo-1-desktop.jpg"
+          alt="Bouquets size S"
+          sizes="50vw"
+        />
+        <div class="store__title-wrapper">
+          <h3 class="store__title">bouquets size S</h3>
+          <span class="store__title-line"></span>
+        </div>
+        <p class="store__text">from $25</p>
+      </li>
+      <li class="store__item">
+        <img
+          srcset="
+            ./images/store-2-desktop.jpg      600w,
+            ./images/store-2-desktop.webp     600w,
+            ./images/store-2-desktop@2x.jpg  1200w,
+            ./images/store-2-desktop@2x.webp 1200w,
+            ./images/store-2-tablet.jpg       344w,
+            ./images/store-2-tablet.webp      344w,
+            ./images/store-2-tablet@2x.jpg    688w,
+            ./images/store-2-tablet@2x.webp   688w,
+            ./images/store-2-mobile.jpg       136w,
+            ./images/store-2-mobile.webp      136w,
+            ./images/store-2-mobile@2x.jpg    272w,
+            ./images/store-2-mobile@2x.webp   272w
+          "
+          src="./images/photo-1-desktop.jpg"
+          alt="bouquets size M"
+          sizes="50vw"
+        />
+        <div class="store__title-wrapper">
+          <h3 class="store__title">bouquets size M</h3>
+          <span class="store__title-line"></span>
+        </div>
+        <p class="store__text">from $45</p>
+      </li>
+      <li class="store__item">
+        <img
+          srcset="
+            ./images/store-4-desktop.jpg      600w,
+            ./images/store-4-desktop.webp     600w,
+            ./images/store-4-desktop@2x.jpg  1200w,
+            ./images/store-4-desktop@2x.webp 1200w,
+            ./images/store-4-tablet.jpg       344w,
+            ./images/store-4-tablet.webp      344w,
+            ./images/store-4-tablet@2x.jpg    688w,
+            ./images/store-4-tablet@2x.webp   688w,
+            ./images/store-4-mobile.jpg       136w,
+            ./images/store-4-mobile.webp      136w,
+            ./images/store-4-mobile@2x.jpg    272w,
+            ./images/store-4-mobile@2x.webp   272w
+          "
+          src="./images/photo-1-desktop.jpg"
+          alt="bouquets size L"
+          sizes="50vw"
+        />
+        <div class="store__title-wrapper">
+          <h3 class="store__title">bouquets size L</h3>
+          <span class="store__title-line"></span>
+        </div>
+        <p class="store__text">from $60</p>
+      </li>
+    </ul>
+    <button type="submit" class="button" data-modal-open>Order flowers</button>
+    <!-- Modal window -->
+    <div class="store__backdrop is-hidden" data-modal>
+      <div class="store__window">
+        <button class="store__btn-close" data-modal-close>
+          <svg class="btn-close__icon" width="12" height="12">
+            <use href="./images/icons.svg#modal-close"></use>
+          </svg>
+        </button>
+        <h3 class="store-form__title">Contact us</h3>
+        <form class="store-form">
+          <p class="store-form__text">
+            If you have any additional questions or you want to clarify
+            something before you make an order please fill in your contact
+            details. We will call you back.
+          </p>
+          <div class="store-form__label-wrapper">
+            <label class="store-form__label"
+              >Name
+              <input
+                type="text"
+                class="store-form__input"
+                required
+                pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
+                title="Username must be two words separated by space."
+                placeholder="Kristin Watson"
+              />
+            </label>
+            <label class="store-form__label"
+              >Email
+              <input
+                type="email"
+                class="store-form__input"
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,5}"
+                placeholder="tanya.hill@example.com"
+                required
+              />
+            </label>
+          </div>
+          <button class="store-form__btn" data-ordered-open>Send</button>
+        </form>
+        <!-- Modal window thank you -->
+        <div
+          class="store__window store__window--ordered is-closed"
+          ordered-modal
+        >
+          <div class="store__icon-wrapper">
+            <svg class="store__icon" width="188" height="142">
+              <use href="./images/icons.svg#icon-thanks"></use>
+            </svg>
+          </div>
+          <h3 class="store-form__title">Thank you!</h3>
+          <p class="store-form__text">
+            We have received your contact details and will reach you soon.
+          </p>
+          <button
+            class="store-form__btn store-form__btn--ordered"
+            data-ordered-close
+          >
+            Continue
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="./modal-store.js"></script>
+</section>
