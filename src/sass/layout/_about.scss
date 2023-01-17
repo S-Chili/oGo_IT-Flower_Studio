@@ -1,13 +1,3 @@
-.about {
-  @media screen and (min-width: 767px) {
-    margin-bottom: 100px;
-  }
-
-  @media screen and (max-width: 1280px) {
-    margin-bottom: 100px;
-  }
-}
-
 .about__desc {
   @media screen and (min-width: 768px) {
     display: flex;
@@ -25,7 +15,6 @@
   line-height: 1.22;
 
   color: $primary-text-color;
-  margin-top: 30px;
 
   @media screen and (min-width: 768px) {
     font-size: 20px;
@@ -45,23 +34,15 @@
   display: flex;
   align-items: center;
   gap: 14px;
-  margin-bottom: 0px;
+  margin-bottom: 30px;
   margin-top: 0;
 
   &::after {
     content: '';
-
-    display: inline-block;
-    width: 183px;
-    border: 1px solid $title-text-color;
-
-    @media screen and (min-width: 768px) {
-      width: 538px;
-    }
-
-    @media screen and (min-width: 1280px) {
-      width: 1050px;
-    }
+    width: 100%;
+    height: 0px;
+    background-color: $title-text-color;
+    border: 1px solid #000000;
   }
 }
 
