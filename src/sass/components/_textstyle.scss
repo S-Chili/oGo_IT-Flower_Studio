@@ -12,19 +12,34 @@
   @media screen and(min-width:$desktop) {
     margin-bottom: 80px;
   }
+  
+.title {
+  display: block;
+  margin-bottom: 32px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.21;
+  color: $title-text-color;
+  text-transform: uppercase;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 44px;
+    line-height: 1.23;
+  }
 }
+
 .title__line {
   display: block;
   flex-grow: 1;
   height: 1px;
   background-color: $title-text-color;
 }
+
 .title {
   display: block;
   margin: 0;
   font-weight: 700;
   font-size: 24px;
-  line-height: 1.21;
   text-transform: uppercase;
   color: $title-text-color;
 
@@ -32,7 +47,7 @@
     font-size: 44px;
     line-height: 1.23;
   }
-}
+
 
 // Підзаголовки з секції store
 .subtitle {
