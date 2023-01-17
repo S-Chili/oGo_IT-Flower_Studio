@@ -233,7 +233,7 @@
   font-weight: 500;
   font-size: 12px;
   line-height: 1.25;
-  color: $title-text-color;
+  color: rgba(0, 0, 0, 0.4);
 
   @media screen and(min-width:$tablet) {
     font-size: 14px;
