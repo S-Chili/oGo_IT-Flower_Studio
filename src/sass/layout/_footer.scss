@@ -1,0 +1,129 @@
+/**Mobile only**/
+.footer {
+  background-color: $footer-background-color;
+  color: $footer-color;
+  padding: 32px 16px;
+  gap: 30px;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  @media screen and (min-width: $tablet) {
+    flex-wrap: nowrap;
+    gap: 44px;
+    padding: 60px 40px 66px 24px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    justify-content: flex-start;
+    gap: 0;
+  }
+
+  &__logo {
+    display: none;
+    @media screen and (min-width: $desktop) {
+      display: flex;
+      fill: $footer-color;
+    }
+  }
+}
+
+.box {
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex-basis: calc((100% - 30px) / 2);
+
+  @media screen and (min-width: $tablet) {
+    flex-basis: content;
+  }
+}
+
+.footer {
+  &__box {
+    display: none;
+    @media screen and (min-width: $desktop) {
+      display: initial;
+      transform: scale(1.5);
+      margin-right: 210px;
+    }
+  }
+
+  &__nav,
+  &__contscts {
+    flex-direction: column;
+  }
+
+  &__nav,
+  &__time {
+    @media screen and (min-width: $desktop) {
+      margin-right: 96px;
+    }
+  }
+  &__social {
+    margin-left: 208px;
+  }
+}
+
+.footer__sub {
+  margin: 0 0 18px 0;
+}
+
+.footer-texts {
+  margin: 0;
+}
+
+.footer__time {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  white-space: nowrap;
+}
+
+.address {
+  &__link {
+    font-style: normal;
+  }
+
+  &__span {
+    display: block;
+    @media screen and (min-width: $tablet) {
+      display: inline;
+    }
+  }
+}
+
+.address__span-map {
+  display: block;
+  @media screen and (min-width: $desktop) {
+    display: inline;
+  }
+}
+
+.social {
+  &__list {
+    display: flex;
+    flex-direction: row;
+    @media screen and (min-width: $tablet) {
+      flex-direction: column;
+      text-align: right;
+    }
+  }
+
+  &__link {
+    padding-right: 14px;
+  }
+
+  &__icon {
+    fill: $footer-color;
+  }
+}
+
+.footer__nav-link,
+.address__link,
+.social__link {
+  display: inline-block;
+  color: $footer-color;
+  margin-bottom: 12px;
+}
