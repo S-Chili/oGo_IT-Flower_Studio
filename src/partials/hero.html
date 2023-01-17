@@ -1,5 +1,21 @@
-<ul>
-<li>
- goit
-</li>
-</ul>   
+<section class="section hero">
+    <div class="container hero__container">
+        <h1 class="hero__title">ANEMONE</h1>
+        <h2 class="hero__titles">flower studio</h2>
+        <div class="hero__image">
+            <img class="hero__images" srcst="
+                    ./images/hero-desktop.png      320w,
+                    ./images/hero-tablet.png      768w,
+                    ./images/hero-mobile@2x.png   640w,
+                    ./images/hero-desktop.png   1280w,
+                    ./images/hero-tablet@2x.png  1536w,
+                    ./images/hero-desktop@2x.png 2560w
+                  " sizes="(min-width: 1200px) 1280px, (min-width: 768px) 768px, (min-width: 480px) 480px, 100vw"
+                src=" ./images/hero-desktop.webp" alt="квіти" width="480" />
+        </div>
+        <button data-modal-open class="hero__btn" type="button">
+            <svg class="hero__svg">
+                <use href="./images/icons.svg#button-main-tablet"></use>
+            </svg></button>
+    </div>
+</section>
