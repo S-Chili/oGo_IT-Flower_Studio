@@ -1,81 +1,88 @@
 //   Більшість заголовків
-.title {
-    display: block;
-    margin-bottom: 32px;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 1.21;
-    color: $title-text-color;
-    text-transform: uppercase;
-
-    @media screen and (min-width: $tablet) {
-        font-size: 44px;
-        line-height: 1.23;
-    }
-}
-
 .title__wrapper {
-    display: flex;
-    align-items: center;
-}
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 32px;
 
-.title__line {
-    display: block;
-    flex-grow: 1;
-    height: 1px;
-    margin-left: 14px;
-    background-color: #000000;
+  @media screen and(min-width:$tablet) {
+    margin-bottom: 60px;
   }
 
-    // Підзаголовки з секції store
-.subtitle {
-    @include secondarytitle($font-weight: 400);
+  @media screen and(min-width:$desktop) {
+    margin-bottom: 80px;
+  }
+}
+.title__line {
+  display: block;
+  flex-grow: 1;
+  height: 1px;
+  background-color: $title-text-color;
+}
+.title {
+  display: block;
+  margin: 0;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.21;
+  text-transform: uppercase;
+  color: $title-text-color;
 
-    @media screen and (min-width: $tablet) {
-        font-size: 20px;
-        line-height: 1.2;
-    }
-
-    @media screen and (min-width: $desktop) {
-        font-size: 22px;
-        line-height: 1.23;
-    }
+  @media screen and (min-width: $tablet) {
+    font-size: 44px;
+    line-height: 1.23;
+  }
 }
 
-    // Підзаголовки з секції delivery
-.texts {
-    font-weight: 500;
+// Підзаголовки з секції store
+.subtitle {
+  @include secondarytitle($font-weight: 400);
 
-    @media screen and (min-width: $tablet) {
-        font-size: 24px;
-    }
-    
-    @media screen and (min-width: $desktop) {
-        font-size: 32px;
-        line-height: 1.22;
-    }
+  @media screen and (min-width: $tablet) {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+
+  @media screen and (min-width: $desktop) {
+    font-size: 22px;
+    line-height: 1.23;
+  }
+}
+
+// Підзаголовки з секції delivery
+.texts {
+  font-weight: 500;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 24px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    font-size: 32px;
+    line-height: 1.22;
+  }
 }
 
 .footer__sub {
-    font-family: 'Inter';
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 1.22;
-    color: $footer-color;
+  font-family: 'Inter';
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.22;
+  color: $footer-color;
 
-    @media screen and (min-width: $tablet) {
-        font-size: 20px;
-        line-height: 0.83;
-    }
+  @media screen and (min-width: $tablet) {
+    font-size: 20px;
+    line-height: 0.83;
+  }
 }
 
 .footer-texts {
-    font-family: 'Inter';
-    font-weight: 500;
-    color: $footer-color;
+  font-family: 'Inter';
+  font-weight: 500;
+  color: $footer-color;
 
-    @media screen and (min-width: $tablet) {
-        font-size: 16px;
-        line-height: 1.19;
-    }
+  @media screen and (min-width: $tablet) {
+    font-size: 16px;
+    line-height: 1.19;
+  }
 }
