@@ -2,11 +2,13 @@
 @import './utils/vars';
 @import './utils/placeholders';
 @import './utils/mixins';
+@import './utils/visually-hidden';
 @import './base/common';
 @import './components/button';
 @import './components/img';
 @import './components/section-styles';
 @import './components/textstyle';
+@import './components/spinner';
 @import './layout/header';
 @import './layout/hero';
 @import './layout/about';
