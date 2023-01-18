@@ -15,6 +15,16 @@
   backdrop-filter: blur(20px);
 }
 
+.header__logo {
+  width: 45px;
+  height: 35px;
+
+  @media screen and (min-width: $tablet) {
+    width: 72px;
+    height: 57px;
+  }
+}
+
 .header-container {
   padding: 16px 16px 0 16px;
   display: flex;
@@ -35,10 +45,16 @@
   @media screen and (min-width: $tablet) {
     display: inline-block;
   }
+
   &-list {
     display: flex;
     gap: 24px;
+
+    @media screen and (min-width: $desktop) {
+      gap: 48px;
+    }
   }
+
   &-link {
     font-size: 20px;
     font-weight: 400;
