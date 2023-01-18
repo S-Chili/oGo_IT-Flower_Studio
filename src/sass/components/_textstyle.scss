@@ -1,4 +1,19 @@
 //   Більшість заголовків
+.title__wrapper {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 32px;
+
+  @media screen and(min-width:$tablet) {
+    margin-bottom: 60px;
+  }
+
+  @media screen and(min-width:$desktop) {
+    margin-bottom: 80px;
+  }
+}
+
 .title {
   display: block;
   margin-bottom: 32px;
@@ -14,17 +29,25 @@
   }
 }
 
-.title__wrapper {
-  display: flex;
-  align-items: center;
-}
-
 .title__line {
   display: block;
   flex-grow: 1;
   height: 1px;
-  margin-left: 14px;
-  background-color: #000000;
+  background-color: $title-text-color;
+}
+
+.title {
+  display: block;
+  margin: 0;
+  font-weight: 700;
+  font-size: 24px;
+  text-transform: uppercase;
+  color: $title-text-color;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 44px;
+    line-height: 1.23;
+  }
 }
 
 // Підзаголовки з секції store

@@ -1,5 +1,10 @@
-.footer {
+/**Mobile only**/
+.foot {
   background-color: $footer-background-color;
+  width: 100%;
+}
+
+.footer {
   color: $footer-color;
   padding: 32px 16px;
   gap: 30px;
@@ -12,12 +17,13 @@
   @media screen and (min-width: $tablet) {
     flex-wrap: nowrap;
     gap: 44px;
-    padding: 60px 40px 66px 24px;
+    padding: 60px 40px 54px 24px;
   }
 
   @media screen and (min-width: $desktop) {
     justify-content: flex-start;
     gap: 0;
+    padding: 72px 48px 72px 24px;
   }
 
   &__logo {
@@ -25,6 +31,8 @@
     @media screen and (min-width: $desktop) {
       display: flex;
       fill: $footer-color;
+      width: 73px;
+      height: 57px;
     }
   }
 }
@@ -61,7 +69,9 @@
     }
   }
   &__social {
-    margin-left: 208px;
+    @media screen and (min-width: $desktop) {
+      margin-left: 208px;
+    }
   }
 }
 
