@@ -13,6 +13,7 @@
 .about__text {
   font-size: 16px;
   line-height: 1.22;
+  margin-bottom: 16px;
 
   color: $primary-text-color;
 
@@ -54,4 +55,8 @@
   @media screen and (min-width: 1280px) {
     min-width: 632px;
   }
+}
+
+.about__image {
+  width: 100%;
 }

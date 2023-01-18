@@ -60,66 +60,59 @@
       </div>
       <div class="blog__content container">
         <p class="blog__text">Follow to our newsletter</p>
-        <button type="button" class="blog__button" data-modal-open>Subscribe</button>
+        <button type="button" class="blog__button" data-modal-2-open>Subscribe</button>
       </div>
     </div>
     <!-- BACKDROP -->
-    <div class="blog__backdrop is-hidden" data-modal>
+    <div class="blog__backdrop is-hidden" data-modal-blog>
       <div class="blog__window">
-        <button class="blog__btn-close" data-modal-close>
+        <button class="blog__btn-close" data-modal-2-close>
           <svg width="12" height="12">
             <use href="./images/icons.svg#modal-close"></use>
           </svg>
         </button>
-        <picture class="blog-form__image">
-          <source
-            srcset="
-              ./images/blog-modal-mobile.webp    1x,
-              ./images/blog-modal-mobile@2x.webp 2x
-            "
-            type="image/webp"
-          />
-          <source
-            srcset="
-              ./images/blog-modal-mobile.jpg    1x,
-              ./images/blog-modal-mobile@2x.jpg 2x
-            "
-            type="image/jpg"
-          />
-          <source
-            srcset="
-              ./images/blog-modal-tablet.webp    1x,
-              ./images/blog-modal-tablet@2x.webp 2x
-            "
-            media="(min-width:768px)"
-            type="image/webp"
-          />
-          <source
-            srcset="
-              ./images/blog-modal-tablet.jpg    1x,
-              ./images/blog-modal-tablet@2x.jpg 2x
-            "
-            media="(min-width:768px)"
-            type="image/jpg"
-          />
-          <source
-            srcset="
-              ./images/blog-modal-desktop.webp    1x,
-              ./images/blog-modal-desktop@2x.webp 2x
-            "
-            media="(min-width:1280px)"
-            type="image/webp"
-          />
-          <source
-            srcset="
-              ./images/blog-modal-desktop.jpg    1x,
-              ./images/blog-modal-desktop@2x.jpg 2x
-            "
-            media="(min-width:1280px)"
-            type="image/jpg"
-          />
-          <img src="./images/blog-modal-desktop.jpg" alt="Flowers" />
-        </picture>
+        <picture>
+        <source
+          srcset="./images/blog-modal-mobile.webp 1x, ./images/blog-modal-mobile@2x.webp 2x"
+          media="(max-width: 767px)"
+          sizes="(min-width: 320px) 320px"
+          type="image/webp"
+        />
+        <source
+          srcset="./images/blog-modal-mobile.jpg 1x, ./images/blog-modal-mobile@2x.jpg 2x"
+          media="(max-width: 767px)"
+          sizes="(min-width: 320px) 320px"
+          type="image/jpeg"
+        />
+        <source
+          srcset="./images/blog-modal-tablet.webp 1x, ./images/blog-modal-tablet@2x.webp 2x"
+          media="(max-width: 1199px)"
+          sizes="(min-width: 768px) 768px"
+          type="image/webp"
+        />
+        <source
+          srcset="./images/blog-modal-tablet.jpg 1x, ./images/blog-modal-tablet@2x.jpg 2x"
+          media="(max-width: 1199px)"
+          sizes="(min-width: 768px) 768px"
+          type="image/jpeg"
+        />
+        <source
+          srcset="
+            ./images/blog-modal-desktop.webp    1x,
+            ./images/blog-modal-desktop@2x.webp 2x
+          "
+          media="(max-width: 1600px)"
+          sizes="(min-width: 1200px) 1200px"
+          type="image/webp"
+        />
+        <source
+          srcset="./images/blog-modal-desktop.jpg 1x, ./images/blog-modal-desktop@2x.jpg 2x"
+          media="(max-width: 1600px)"
+          sizes="(min-width: 1200px) 1200px"
+          type="image/jpeg"
+        />
+        <img src="./images/blog-modal-desktop.jpg" alt="flower" class="blog-form__image"/>
+      </picture>
         <div class="blog-form__wrapper">
           <h3 class="blog-form__title">Follow to our newsletter</h3>
           <p class="blog-form__text">
@@ -134,7 +127,7 @@
               placeholder="Your email"
             />
           </label>
-          <button class="blog-form__btn">Subscribe</button>
+          <button class="blog-form__btn" data-modal-2-open>Subscribe</button>
         </div>
       </div>
     </div>

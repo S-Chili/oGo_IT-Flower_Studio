@@ -16,10 +16,18 @@
 }
 
 .header-container {
-  padding: 16px;
+  padding: 16px 16px 0 16px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media screen and (min-width: $tablet) {
+    padding: 24px 24px 0 24px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    padding: 28px 24px 0 24px;
+  }
 }
 .nav {
   display: none;
@@ -37,10 +45,9 @@
     line-height: 1.2;
     color: $primary-text-color;
 
-    &:hover {
-      color: $btn-color;
-    }
-    &:focus {
+    &:hover,
+    &:focus,
+    &:active {
       color: $btn-color;
     }
   }
@@ -59,8 +66,14 @@
     }
   }
 }
+
+.header-phone:hover,
+.header-phone:focus {
+  fill: $btn-color;
+}
+
 .menu-toggle {
-  background-color: $tittle-background-color;
+  background-color: transparent;
   border: none;
   cursor: pointer;
 

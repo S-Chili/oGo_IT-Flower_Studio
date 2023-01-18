@@ -1,11 +1,11 @@
 .section {
-   padding-bottom: 60px;
-   padding-top: 60px;
-  
-    @media screen and (min-width: $tablet) {
-      padding-bottom: 100px;
-      padding-top: 100px;
-    }
+  padding-bottom: 30px;
+  padding-top: 30px;
+
+  @media screen and (min-width: $tablet) {
+    padding-bottom: 50px;
+    padding-top: 50px;
+  }
 }
 
 .container {
@@ -13,14 +13,14 @@
   padding-left: 16px;
   padding-right: 16px;
   max-width: 479.98px;
-  
-    @media screen and (min-width: $tablet) {
-      max-width: 768px;
-      padding-left: 24px;
-      padding-right: 24px;
-    }
-  
-    @media screen and (min-width: $desktop) {
-      max-width: 1280px;
-    }
+
+  @media screen and (min-width: $tablet) {
+    max-width: 768px;
+    padding-left: 24px;
+    padding-right: 24px;
   }
+
+  @media screen and (min-width: $desktop) {
+    max-width: 1280px;
+  }
+}

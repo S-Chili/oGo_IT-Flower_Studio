@@ -96,6 +96,7 @@
   top: 0;
   right: 0;
   bottom: 0;
+  z-index: 105;
   opacity: 1;
   background-color: rgba(0, 0, 0, 0.3);
   transition: opacity 250ms $timing-function, visibility 250ms $timing-function;
@@ -112,7 +113,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-
+  z-index: 105;
   padding: 28px 16px;
   width: 272px;
   min-height: 357px;
@@ -133,8 +134,8 @@
 
 .store__btn-close {
   position: absolute;
-  right: calc(19 / 272 * 100%);
-  top: calc(19 / 272 * 100%);
+  right: 16px;
+  top: 16px;
   display: block;
   width: 18px;
   height: 18px;
@@ -143,8 +144,8 @@
   z-index: 100;
 
   @media screen and(min-width:$tablet) {
-    right: 28px;
-    top: 28px;
+    right: 24px;
+    top: 24px;
     width: 24px;
     height: 24px;
   }
@@ -277,6 +278,9 @@
   font-size: 14px;
   line-height: 1.21;
   color: $tittle-background-color;
+  .store-form:invalid & {
+    pointer-events: none;
+  }
 
   @media screen and(min-width:$tablet) {
     padding: 14px 0;

@@ -14,9 +14,14 @@
         : 'enableBodyScroll';
       bodyScrollLock[scrollLockMethod](document.body);
     };
-  
+    
     openMenuBtn.addEventListener('click', toggleMenu);
     closeMenuBtn.addEventListener('click', toggleMenu);
+  
+  document.querySelectorAll('ul.menu-list li').forEach(element => element.addEventListener('click', () => {
+    document.querySelector('.menu-container').classList.remove('is-open');
+   })
+  );
   
     // Close the mobile menu on wider screens if the device orientation changes
     window.matchMedia('(min-width: 768px)').addEventListener('change', e => {

@@ -1,8 +1,8 @@
 .blog {
-    padding-top: 0px;
-    padding-bottom: 60px;
-    @media screen and (min-width: $tablet) {
-      padding-bottom: 100px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: $tablet) {
+    padding-bottom: 100px;
   }
 }
 
@@ -11,31 +11,32 @@
   padding-right: 0px;
   @media screen and (min-width: $desktop) {
     padding: 0 24px;
-}
+  }
 }
 
 .blog__title {
-    display: flex;
-    align-items: center;
-    margin: 0;
-    margin-bottom: 32px;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  margin-bottom: 32px;
+  padding: 0 16px;
+  gap: 14px;
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 60px;
     padding: 0 24px;
-    gap: 14px;
+  }
 
-    @media screen and (min-width: $tablet) {
-        margin-bottom: 60px;
-    }
-
-    @media screen and (min-width: $desktop) {
-        margin-bottom: 122px;
-    }
-    &::after {
-    content: "";
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 122px;
+  }
+  &::after {
+    content: '';
     width: 100%;
     height: 0px;
     background-color: $title-text-color;
     border: 1px solid #000000;
-    }
+  }
 }
 
 .slider {
@@ -84,7 +85,6 @@
   @media screen and (min-width: $tablet) {
     gap: 32px;
   }
-  
 }
 .slider__button {
   position: absolute;
@@ -94,24 +94,24 @@
   z-index: 2;
 
   &--prev {
-  left: -43px;
-  @media screen and (min-width: $tablet) {
-    left: 0;
-  }
-  @media screen and (min-width: $desktop) {
-    left: 0;
-    margin-left: 16px;
-  }
+    left: -43px;
+    @media screen and (min-width: $tablet) {
+      left: 0;
+    }
+    @media screen and (min-width: $desktop) {
+      left: 0;
+      margin-left: 16px;
+    }
   }
   &--next {
-  right: -43px;
-  @media screen and (min-width: $tablet) {
-    right: 0;
-  }
-  @media screen and (min-width: $desktop) {
-    right: 0;
-    margin-right: 16px;
-  }
+    right: -43px;
+    @media screen and (min-width: $tablet) {
+      right: 0;
+    }
+    @media screen and (min-width: $desktop) {
+      right: 0;
+      margin-right: 16px;
+    }
   }
   &--prew-black {
     display: none;
@@ -154,45 +154,46 @@
   flex-direction: column;
 }
 .blog__text {
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 1.22;
-    color: #000000;
-    margin-top: 28px;
-    margin-bottom: 32;
-    @media screen and (min-width: $tablet) {
-      font-size: 32px;
-      margin-top: 0px;
-      margin-bottom: 40px;
-    }
-    @media screen and (min-width: $desktop) {
-      margin-top: 0px;
-      margin-bottom: 48px;
-    }
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  color: #000000;
+  margin-top: 28px;
+  margin-bottom: 32;
+  @media screen and (min-width: $tablet) {
+    font-size: 32px;
+    margin-top: 0px;
+    margin-bottom: 40px;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-top: 0px;
+    margin-bottom: 48px;
+  }
 }
 
 .blog__button {
-    display: block;
-    outline: none;
-    border: none;
-    border-radius: 38px;
-    width: 170px;
-    height: 40px;
-    font-size: 18px;
-    font-weight: 500;
-    line-height: calc(24/18);
-    color:#fff;
-    background-color: #e86f54;
-    @media screen and (min-width: $tablet) {
-      width: 280px;
-      height: 64px;
-      font-size: 28px;
-      line-height: calc(24/28);
-    }
+  display: block;
+  outline: none;
+  border: none;
+  border-radius: 38px;
+  width: 170px;
+  height: 40px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: calc(24 / 18);
+  color: #fff;
+  background-color: #e86f54;
+  @media screen and (min-width: $tablet) {
+    width: 280px;
+    height: 64px;
+    font-size: 28px;
+    line-height: calc(24 / 28);
+  }
 }
 
 .blog__backdrop {
   position: absolute;
+  z-index: 105;
   left: 0;
   top: 0;
   right: 0;
@@ -273,6 +274,7 @@
     font-size: 28px;
   }
 }
+
 .blog-form__text {
   margin-bottom: 18px;
   font-weight: 400;

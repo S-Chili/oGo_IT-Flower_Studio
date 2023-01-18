@@ -1,15 +1,13 @@
 .hero {
-  padding-top: 44px;
-  padding-bottom: 100px;
+  padding-top: 95px;
+  padding-bottom: 95px;
 
   @media screen and (min-width: 768px) {
-    padding-top: 38px;
-    padding-bottom: 194px;
+    padding-top: 119px;
   }
 
   @media screen and (min-width: 1280px) {
-    padding-top: 64px;
-    padding-bottom: 193px;
+    padding-top: 149px;
   }
 }
 
@@ -29,7 +27,6 @@
   left: 50%;
   bottom: 0;
   transform: translate(-50%, 50%);
-  font-family: 'Montserrat';
   font-weight: 400;
   font-size: 52px;
   line-height: 1.2;
@@ -65,7 +62,6 @@
 
   margin-right: 14px;
   margin-left: 11px;
-  font-family: 'Montserrat';
   font-weight: 400;
   font-size: 14px;
   line-height: 1.21;
@@ -95,7 +91,6 @@
   height: 274px;
   object-fit: cover;
   object-position: center;
-  margin-top: 44px;
 
   @media screen and (min-width: $tablet) {
     margin-bottom: 38px;
@@ -127,6 +122,19 @@
   width: 64px;
   height: 76px;
   left: 224px;
+  animation-name: spin;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+
+    100% {
+      transform: rotate(360deg);
+    }
+  }
 
   background-image: url(../images/icons.svg#button-main-mobile.svg);
 

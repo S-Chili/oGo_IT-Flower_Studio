@@ -78,7 +78,9 @@
     display: flex;
     flex-direction: column;
     gap: 26px;
+    align-items: center;
   }
+
   &-link {
     color: $tittle-background-color;
     font-family: Montserrat;
