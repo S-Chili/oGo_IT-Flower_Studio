@@ -79,6 +79,11 @@
     margin-right: 14px;
     @media screen and (min-width: $tablet) {
       margin-right: 0px;
+      margin-left: 40px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      margin-left: 60px;
     }
   }
 }
